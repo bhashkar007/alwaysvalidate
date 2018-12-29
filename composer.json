@@ -1,0 +1,43 @@
+{
+    "name": "by/always-validate",
+    "description": "Make Craft validate disabled elements before saving",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "alwaysvalidate"
+    ],
+    "support": {
+        "docs": "https://github.com/bhashkar007/always-validate/blob/master/README.md",
+        "issues": "https://github.com/bhashkar007/always-validate/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bhashkar Yadav",
+            "homepage": "http://sidd3.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "by\\alwaysvalidate\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "AlwaysValidate",
+        "handle": "always-validate",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/bhashkar007/always-validate/master/CHANGELOG.md",
+        "components": {
+            "alwaysValidateService": "by\\alwaysvalidate\\services\\AlwaysValidateService"
+        },
+        "class": "by\\alwaysvalidate\\AlwaysValidate"
+    }
+}
